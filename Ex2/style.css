@@ -1,0 +1,18 @@
+@keyframes rotate {
+    from {transform: rotate(0)}
+    to {transform: rotate(90deg)}
+}
+
+.block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 100px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+}
