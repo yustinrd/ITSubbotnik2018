@@ -1,0 +1,25 @@
+@keyframes rotate {
+    from {transform: rotate(0)}
+    to {transform: rotate(90deg)}
+}
+
+.block {
+    width: 300px;
+    height: 300px;
+    display: block;
+    position: absolute;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+    border: 4px solid red;
+    transition: transform 1s;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+}
